@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+:root{
+  font-size: 20px;
+}
+
+.card{
+  background-color: white;
+  border-radius: 1.25rem;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+body{
+  background-color: #0d6efd;
+}
+
+.features{
+  list-style: none;
+  text-align: left;
+  border-top: 1px solid rgb(211, 210, 210);
+  padding-top: 0.75rem;
+}
+
+.features > li{
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.features>li::marker{
+  content: "✔️";
+}
+
+.card:nth-child(1) .features>li:nth-child(n + 5)::marker{
+  content: "❌";
+}
+
+.card:nth-child(1) .features>li:nth-child(n + 5){
+  opacity: 70%;
+}
+
+.card:nth-child(2) .features>li:last-child::marker{
+  content: "❌";
+}
+
+.card:nth-child(2) .features>li:last-child{
+  opacity: 70%;
+}
+
+.buy {
+  width: 100%;
+  background-color: rgb(6, 112, 250);
+  color: white;
+  border-color: rgb(6, 112, 250);
+  border-radius: 1000px;
+  padding:0.75rem;
+  font-size: 0.75rem;
+  font-style:normal ;
+  font-weight: bolder;
+  letter-spacing: 4px;
+  opacity: 70%;
+}
+
+.buy:hover{
+  background-color: rgb(0, 69, 158);
+  border-color: rgb(0, 69, 158);
+}
+
+.price{
+  font-size: 2rem;
+}
+
+.price-duration{
+  font-size: 0.8rem;
+}
+
+.plan-name{
+  color: grey;
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+}
